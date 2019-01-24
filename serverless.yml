@@ -24,6 +24,6 @@ provider:
 functions:
   clean:
     handler: functions/clean.handler
-    timeout: 60
+    timeout: 180
     events:
-      - schedule: rate(1 hour)
+      - schedule: rate(6 hours)
